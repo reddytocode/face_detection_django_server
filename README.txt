@@ -1,3 +1,6 @@
+Modified from: https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-python-and-opencv-in-just-5-minutes/
+
+
 Face Detection
 
 Run Server:
