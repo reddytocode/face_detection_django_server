@@ -1,8 +1,9 @@
 import requests
 import cv2
 
-
-url = "http://127.0.0.1:8000/face_detection/detect/"
+ip = 127.0.0.1
+port = 8000
+url = "http://{}:{}/face_detection/detect/".format(ip, port)
 
 image = cv2.imread("images/boy.jpg")
 payload =  {'image': open('images/boy.jpg', 'rb')}
