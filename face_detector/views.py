@@ -8,7 +8,7 @@ import urllib
 from urllib.request import urlopen
 import json
 import os
-FACE_DETECTOR_PATH = "/Users/reddytintayaconde/Desktop/Codes/cv_api/cascades/haarcascade_frontalface_default.xml"
+FACE_DETECTOR_PATH = "cascades/haarcascade_frontalface_default.xml"
 
 @csrf_exempt
 def detect(request):
@@ -24,6 +24,7 @@ def detect(request):
                 return JsonResponse(data)
             image = _grab_image(url=url)
             #data["success"] = True
+        print("image: ", image)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         detector = cv2.CascadeClassifier(FACE_DETECTOR_PATH)
         rects = detector.detectMultiScale(
