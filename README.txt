@@ -3,6 +3,8 @@ Modified from: https://www.pyimagesearch.com/2015/05/11/creating-a-face-detectio
 
 Face Detection
 
+Install Requirements
+    - pip install -r requirements.txt
 Run Server:
     - Make avaiable to the world
         - cv_api/settings.py add your server ip to ALLOWED_HOSTS = [server_ip_or_domain]
