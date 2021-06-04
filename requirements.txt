@@ -1,4 +1,4 @@
 numpy==1.17.2
-django==2.2.5
+django==2.2.21
 opencv-python==4.1.1.26
 requests==2.22.0
